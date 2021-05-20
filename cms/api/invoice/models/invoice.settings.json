@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "invoices",
+  "info": {
+    "name": "Invoice",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Date": {
+      "type": "date"
+    },
+    "total_ht": {
+      "type": "float"
+    },
+    "total_ttc": {
+      "type": "float"
+    },
+    "paid": {
+      "type": "boolean"
+    },
+    "invoice_id": {
+      "type": "uid"
+    },
+    "invoice_field": {
+      "model": "invoice-field"
+    },
+    "business": {
+      "model": "business"
+    },
+    "client": {
+      "model": "client"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

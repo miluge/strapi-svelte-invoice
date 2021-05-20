@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "invoice_fields",
+  "info": {
+    "name": "invoice_field"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "invoice_elements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "invoice-elements.invoice-elements"
+    }
+  }
+}

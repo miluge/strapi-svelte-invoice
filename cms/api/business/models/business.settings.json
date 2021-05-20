@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "businesses",
+  "info": {
+    "name": "business",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "company_name": {
+      "type": "string"
+    },
+    "code_ape": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "nr_siren": {
+      "type": "biginteger",
+      "required": true,
+      "max": "9",
+      "min": "9"
+    },
+    "nr_siret": {
+      "type": "biginteger",
+      "required": false,
+      "unique": true,
+      "max": "14",
+      "min": "14"
+    },
+    "company_id": {
+      "type": "uid",
+      "targetField": "company_name"
+    }
+  }
+}

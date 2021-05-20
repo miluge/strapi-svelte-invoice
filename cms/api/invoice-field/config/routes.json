@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/invoice-fields",
+      "handler": "invoice-field.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/invoice-fields/count",
+      "handler": "invoice-field.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/invoice-fields/:id",
+      "handler": "invoice-field.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/invoice-fields",
+      "handler": "invoice-field.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/invoice-fields/:id",
+      "handler": "invoice-field.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/invoice-fields/:id",
+      "handler": "invoice-field.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
